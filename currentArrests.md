@@ -4,9 +4,35 @@ title: Current Arrests
 permalink: /currentArrests/
 ---
 
-<div class="row"> 
+<div class="content">
+  <table cellspacing="0" cellpadding="4" align="center" border="1">
+    <thead>
+      <tr>
+        <th>ID #</th>
+        <th>Name</th>
+        <th>Arrest Date</th>
+        <th>Statute/Charges</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
 {% for arrest in site.data.arrests %}
-{{ arrest.FirstName | capitalize }} {{ arrest.LastName | capitalize }}
-<img src="{{ arrest.ImageThumb }}"><br>
+      <tr>
+        <td>{{ arrest.IDNumber }}</td>
+        <td>{{ arrest.FirstName | capitalize }} {{ arrest.MiddleName | capitalize }} {{ arrest.LastName | capitalize }}</td>
+        <td>
+          {% for a in arrest.Arrests %}
+          {{ a.ArrestDate }}<br>
+          {% endfor %}
+        </td>
+        <td>
+          {% for charge in arrest.Charges %}
+          {{ charge.StatuteCode }}-{{ charge.StatuteDesc}}<br>
+          {% endfor %}          
+        </td>
+        <td><img src="{{ arrest.ImageThumb }}"><br></td>
+      </tr>
 {% endfor %}
+    </tbody>
+  </table>
 </div>
