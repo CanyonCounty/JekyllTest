@@ -3,6 +3,9 @@ layout: page
 title: Current Arrests
 permalink: /currentArrests/
 ---
+<script>
+  var arrests = {{ site.data.arrests }};
+</script>
 
 <div class="content">
   <table cellspacing="0" cellpadding="4" align="center" border="1">
