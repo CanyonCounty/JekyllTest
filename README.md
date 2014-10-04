@@ -1,4 +1,4 @@
-JeckyllTest
+JekyllTest
 ===========
 
-Just testing out Jeckyll
+Just testing out Jekyll
