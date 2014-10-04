@@ -5,6 +5,8 @@ module Jekyll
   class FetchGenerator < Generator
     safe true
     def generate(site)
+      Dir.mkdir('scripts') unless Dir.exists?('scripts')
+      
       open('scripts/PrecinctInfo.js', 'w') do |file|
         file << open('http://www.canyonco.org/CanyonCounty/Webparts/Elections/js/PrecinctInfo.js?v2').read
       end
