@@ -4,7 +4,7 @@ title: Current Arrests
 permalink: /currentArrests/
 ---
 <script>
-  var arrests = {{ site.data.arrests }};
+  var arrests = {{ site.data.arrests }}
 </script>
 
 <div class="content">
