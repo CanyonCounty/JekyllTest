@@ -15,9 +15,9 @@ module Jekyll
       end
 
       begin
-        open('scripts/PrecinctInfo.js', 'w') do |file|
-          file << open('http://www.canyonco.org/CanyonCounty/Webparts/Elections/js/PrecinctInfo.js?v2').read
-        end
+        # open('scripts/PrecinctInfo.js', 'w') do |file|
+        #   file << open('http://www.canyonco.org/CanyonCounty/Webparts/Elections/js/PrecinctInfo.js?v2').read
+        # end
 
         open('_data/arrests.json', 'w') do |file|
           file << open('http://secret.canyonco.org/Sheriff/CurrentArrest').read
