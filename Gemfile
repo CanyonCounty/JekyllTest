@@ -1,5 +1,5 @@
 source :rubygems
-ruby '2.1.0'
+ruby '2.0.0'
 gem 'sinatra'
 gem 'thin'
 gem 'RedCloth'
