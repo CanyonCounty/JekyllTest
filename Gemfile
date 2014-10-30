@@ -7,7 +7,7 @@ gem 'rack', "1.5.2"
 # gem 'sinatra-subdomain'
 # gem 'rake'
 # gem 'haml'
-# gem 'redcarpet'
+gem 'redcarpet'
 # gem 'sinatra-contrib'
 
 gem 'puma'
