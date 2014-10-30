@@ -9,6 +9,6 @@ gem 'rack', "1.5.2"
 # gem 'haml'
 gem 'redcarpet'
 # gem 'sinatra-contrib'
-
+gem 'jekyll'
 gem 'puma'
 gem 'foreman'
