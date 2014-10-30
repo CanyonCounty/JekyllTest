@@ -1,1 +1,1 @@
-web: puma -p $PORT _config.yml
+web: puma -p $PORT _config.ru
