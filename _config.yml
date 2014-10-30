@@ -15,3 +15,4 @@ markdown: kramdown
 #highlighter: pygments
 highlighter: false
 encoding: utf-8
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
