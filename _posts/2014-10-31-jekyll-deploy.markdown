@@ -16,12 +16,10 @@ However, in order to do that I had to:
 - Install OpenSSH (sudo apt-get install openssh-server) [More Info](https://help.ubuntu.com/community/SSH/OpenSSH/Configuring)
 - Copy my .pub ssh key into ~/.ssh/authorized_keys
 - Edit my local box's ~/.ssh/config to include the pub key
-        ```
         Host <hostname>
           HostName <hostname again>
           IdentityFile ~/.ssh/<non pub key>
           IdentitiesOnly yes
-        ```
 - Configure the Uncomplicated Firewall (sudo ufw enable, sudo allow 22, sudo allow 80) [More Info](https://help.ubuntu.com/12.04/serverguide/firewall.html)
 - Created a new git repo on the Ubuntu box
         ```
