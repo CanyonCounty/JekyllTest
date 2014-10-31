@@ -25,13 +25,16 @@ However, in order to do that I had to:
 - Configure the Uncomplicated Firewall (sudo ufw enable, sudo allow 22, sudo allow 80) [More Info](https://help.ubuntu.com/12.04/serverguide/firewall.html)
 - Created a new git repo on the Ubuntu box
         ```
+        
         cd ~
         mkdir myrepo.git
         cd myrepo.git
         git --bare init
+        
         ```
 - Created a $myrepo/hooks/post-receive file with the following contents. Notice that PUBLIC_WWW is the directory you created configuring Nginx.
         ```
+        
         #!/bin/sh
         GIT_REPO=$HOME/myrepo.git
         TMP_GIT_CLONE=$HOME/tmp/myrepo
@@ -40,6 +43,7 @@ However, in order to do that I had to:
         jekyll build -s $TMP_GIT_CLONE -d $PUBLIC_WWW
         rm -Rf $TMP_GIT_CLONE
         exit
+        
         ```
 - Added the Ubuntu box as a git remote
         ```
