@@ -16,3 +16,8 @@ markdown: kramdown
 highlighter: false
 encoding: utf-8
 #exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile']
+timezone: "America/Boise"
+future: false
+
+kramdown:
+  input: GFM
