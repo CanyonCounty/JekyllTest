@@ -20,11 +20,11 @@ module Jekyll
         # end
 
         open('_data/arrests.json', 'w') do |file|
-          file << open('http://www.canyonco.org/MiddleTier/CurrentArrests.ashx').read
+          file << open('http://api.canyonco.org/Sheriff/CurrentArrest').read
         end
 
         open('_data/jailList.json', 'w') do |file|
-          file << open('http://www.canyonco.org/MiddleTier/JailList.ashx').read
+          file << open('http://api.canyonco.org/Sheriff/JailList').read
         end      
       rescue Exception => msg
         puts "Error downloading content"
