@@ -1,10 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    wdm (0.1.0)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
-  wdm (~> 0.1.0)
